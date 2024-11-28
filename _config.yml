@@ -1,69 +1,35 @@
-name: Build GitHub Profile
-on:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 0 * * *' # Runs daily
+#Site Settings
+title: ABU SUFIAN RIFAT
+description: Executive - Brand & Communication (Dept: Business Development)
+url: https://aran-rifat.github.io
+baseurl: "" # Leave empty unless your site is in a subdirectory
 
-jobs:
-  build-profile:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+# Author Information
+author:
+  name: ARAN-RIFAT
+  email: aran.rifat12@gmail.com
+  location: South Badda, Dhaka-1212
 
-      - name: Update GitHub Profile README
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - run: |
-          echo "
-          # Welcome to My GitHub Profile! 👋
+# Social Links
+social:
+  linkedin: https://www.linkedin.com/in/aranrifat/
+  github: https://github.com/aran-rifat
+  facebook: https://www.facebook.com/aran.rifat12/
 
-          ## About Me
-          Hi, I'm Abu Sufian Rifat, a **Creative Designer** and **Brand & Communication Executive**.  
-          With over 5.5 years of professional experience, I specialize in:
-          - Motion Graphics (After Effects, Premiere Pro)
-          - Video Editing and Scripting
-          - Graphic Design (Photoshop, Illustrator)
-          - Brand Identity Development
-          - Digital Marketing Strategies
+# Theme Settings
+theme: minima # Or any supported Jekyll theme
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-          ## 🌟 Highlights
-          - 🚀 **Creative Problem-Solver**: Leveraging technology and artistry to exceed client expectations.
-          - 🎨 **Visual Storytelling**: Building compelling campaigns to boost engagement and brand visibility.
-          - 📚 **Education**: B.Sc. in Computer Science Engineering, ongoing Executive MBA.
+# Markdown Processing
+markdown: kramdown
+kramdown:
+  input: GFM # GitHub Flavored Markdown
 
-          ## 💻 Technical Skills
-          - **Tools**: Adobe Creative Suite (After Effects, Premiere Pro, Photoshop, Illustrator)
-          - **Marketing Strategies**: TTL and ATL Marketing
-          - **Collaboration**: Project Management, Team Coordination
-
-          ## 📈 GitHub Stats
-          ![Rifat's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=radical)
-          ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=radical)
-
-          ## 🌐 Connect with Me
-          - 💼 [LinkedIn](https://www.linkedin.com/in/aranrifat/)
-          - ✉️ Email: aran.rifat12@gmail.com
-
-          ## 🚀 Portfolio Coming Soon!
-
-          ---
-          *This README was auto-generated using GitHub Actions.*
-          " > README.md
-
-      - name: Commit and Push Changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .
-          git commit -m "Auto-update GitHub Profile README"
-          git push
-
-#show_downloads: true
-theme: jekyll-theme-minimal
-
-
-
+# Exclude Specific Files/Folders
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
