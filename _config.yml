@@ -17,7 +17,7 @@ social:
   facebook: https://www.facebook.com/aran.rifat12/
 
 # Theme Settings
-theme: minima
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
