@@ -1,34 +1,6 @@
-# Site Settings
-title: "ABU SUFIAN RIFAT"
-description: "Executive - Brand & Communication (Dept: Business Development)"
-url: "https://aran-rifat.github.io"
-
-# Author Information
-author:
-  name: "ARAN-RIFAT"
-  email: "aran.rifat12@gmail.com"
-  location: "South Badda, Dhaka-1212"
-
-# Social Links
-social:
-  linkedin: "https://www.linkedin.com/in/aranrifat/"
-  github: "https://github.com/aran-rifat"
-  facebook: "https://www.facebook.com/aran.rifat12/"
-
-# Theme Settings
-theme: "jekyll-theme-minimal"
-plugins:
-  - "jekyll-feed"
-  - "jekyll-seo-tag"
-  - "jekyll-sitemap"
-
-# Markdown Processing
-markdown: "kramdown"
-kramdown:
-  input: "GFM" # GitHub Flavored Markdown
-
-# Exclude Specific Files/Folders
-exclude:
-  - "README.md"
-  - "Gemfile"
-  - "Gemfile.lock"
+title: ABU SUFIAN RIFAT
+description: Executive - Brand & Communication (Dept: Business Development)
+theme: jekyll-theme-minimal
+author: ARAN-RIFTA
+baseurl: /portfolio
+url: https://aran-rifat.github.io
