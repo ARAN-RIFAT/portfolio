@@ -1,4 +1,4 @@
-#Site Settings
+# Site Settings
 title: ABU SUFIAN RIFAT
 description: Executive - Brand & Communication (Dept: Business Development)
 url: https://aran-rifat.github.io
@@ -17,7 +17,7 @@ social:
   facebook: https://www.facebook.com/aran.rifat12/
 
 # Theme Settings
-theme: minima # Or any supported Jekyll theme
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
